@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>hi5cc-Day6</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/kd-styles.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<small id='text-change-color'>hi5cc</small>
+					<h2>Introduction to<br/>Creative Coding</h2>
+					<h6>day 6</h6>
+					<small>Karan Dudeja, Dec 2020</small>
+					<p class="text-muted">Srishti Manipal Institute of Art, Design and Technology<br/>
+						Interim 2020
+					</p>
+				</section>
+				
+				<section>
+					<section> 
+						<h2>Randomness</h2>
+						<p><small class="text-muted">2 functions to note:</small></p>
+						<p><small>Default Functions by p5.js</small></p>
+						<small>
+							<ul>
+								<li>Random</li>
+								<li>Noise</li>
+							</ul>
+						</small>
+						<br/><br/>
+						<small><a class="text-green" href="https://p5js.org/reference/#/p5/random" target="_blank">📒random()</a>
+							<a class="text-green" href="https://p5js.org/reference/#/p5/noise" target="_blank"> &nbsp;&nbsp;&nbsp; 📒noise()</a><br/><br/>
+							<a class="text-green" href="https://editor.p5js.org/karanDudeja/sketches/i-qAIUUZY" target="_blank">Example.RandomVsNoise</a>
+							<a class="text-green" href="https://editor.p5js.org/karanDudeja/sketches/CS9YlUUeX" target="_blank">&nbsp;&nbsp;&nbsp; Example.Jagged-Waves</a>
+						</small>
+					</section>
+					<section> 
+						<h2>Polar Coordinates</h2>
+						<p><small class="text-muted">A new way of thinking about the coordinate system</small></p>
+						<small>
+						<p>Basic; any point has a (x,y)</p>
+						<ul>
+							<li>X coordinate = Radius * cos(angle)<span class="text-gray"> &nbsp;&nbsp; cos(theta) = adjacent / hypotenuse</span></li>
+							<li>Y coordinate = Radius * sin(angle) <span class="text-gray"> &nbsp;&nbsp; sin(theta) = adjacent / hypotenuse</span></li>							
+						</ul>
+						</small>
+						<br/><br/>
+						<small><a class="text-green" href="https://www.geogebra.org/m/WTJq9yC9" target="_blank">📒Polar Coordinates</a>
+							<a class="text-green" href="https://p5js.org/reference/#/p5/sin" target="_blank"> &nbsp;&nbsp;&nbsp; 📒sin</a>
+							<a class="text-green" href="https://p5js.org/reference/#/p5/cos" target="_blank"> &nbsp;&nbsp;&nbsp; 📒cos</a><br/><br/>
+							<a class="text-green" href="https://editor.p5js.org/karanDudeja/sketches/OdQtz8m60" target="_blank"> Try it here</a>
+						</small>
+					</section> 
+				</section>
+				<section>
+					<h3>🚴<br/>Activity 2.1</h3>
+					<p><small class="text-muted">Submission details on the Blog</small></p>
+					<small><p>On <span class="text-pink">THREE</span> canvases with dimensions <span class="text-pink">400 x 400</span></p>
+					<img src="imgs/mLines.jpeg" class="img-20pw"> &nbsp;&nbsp;
+					<img src="imgs/mCircles.jpeg" class="img-20pw" >
+					<ul>
+						<li><span class="text-pink">Sketch 1.</span> Will have an output similar to the <span class="text-yellow">left</span> image</li>
+						<li><span class="text-pink">Sketch 2.</span> Will have an output similar to the <span class="text-yellow">right</span> image</li>
+						<li>Sketch 1 and 2, both have <span class="text-pink">2 modes</span> i.e. on every alternate click on the canvas, colors switch between random colors or a new color.</li>
+						<li><span class="text-pink">Sketch 3.</span> This one spirals from the center, made up of dots with a <span class="text-yellow">diameter of 4</span> each</li>					
+					</ul>
+					</small>					
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="js/kd-script.js"></script>
+	</body>
+</html>
